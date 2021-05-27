@@ -2,6 +2,10 @@
 
 have you ever tried to find a good image viewer gallery on web ? that is feeling like native app on phone and has good feels on pc, and that is not a dark heavy expensive wordpress plugin or an old shit running on jquery ? I bother me so much so I pocked something after a long time of research. I will eventually come with a custom implementation with react support one day but here is the first poc...
 
+# How to run the project ?
+
+* `yarn && node server.js`
+* open http://localhost:8080
 # What does it use
 
 It's a poc in vanilla modern js. It uses:
