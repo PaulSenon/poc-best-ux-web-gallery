@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Gallery</title>
+    <style>
+        body{
+            margin: 0px;
+            background: black;
+        }
+        .container{
+            margin: auto;
+            margin-top: 100px;
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            /* padding-bottom: 56.25%; */
+        }
+        .wrapper{
+            /* position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            height: 100%; */
+
+        }
+        .swiper-container {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .swiper-slide img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: opacity ease 200ms;
+        }
+        .mySwiper2 .swiper-slide img{
+            object-fit: contain;
+        }
+        .mySwiper .swiper-slide img{
+            object-fit: cover;
+        }
+        .mySwiper2{
+            height: 85%;
+            width: 100%;
+        }
+        .mySwiper {
+            height: 15%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        img:not([src]){
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="wrapper"> -->
+
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <div
+                style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                class="swiper-container mySwiper2"
+                >
+                <div class="swiper-wrapper pswp-gallery pswp-gallery--single-column" id="gallery--simple">
+                    <div class="swiper-slide">
+                        <a href="https://swiperjs.com/demos/images/nature-1.jpg" 
+                            data-pswp-width="1024" 
+                            data-pswp-height="1024" 
+                            data-cropped="true"
+                            target="_blank">
+                            <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" class="swiper-lazy"/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://swiperjs.com/demos/images/nature-2.jpg" 
+                            data-pswp-width="1024" 
+                            data-pswp-height="1024" 
+                            data-cropped="true"
+                            target="_blank">
+                            <img data-src="https://swiperjs.com/demos/images/nature-2.jpg" class="swiper-lazy"/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://swiperjs.com/demos/images/nature-3.jpg" 
+                            data-pswp-width="1024" 
+                            data-pswp-height="1024" 
+                            data-cropped="true"
+                            target="_blank">
+                            <img data-src="https://swiperjs.com/demos/images/nature-3.jpg" class="swiper-lazy"/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://swiperjs.com/demos/images/nature-4.jpg" 
+                            data-pswp-width="1024" 
+                            data-pswp-height="1024" 
+                            data-cropped="true"
+                            target="_blank">
+                            <img data-src="https://swiperjs.com/demos/images/nature-4.jpg" class="swiper-lazy"/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://swiperjs.com/demos/images/nature-5.jpg" 
+                            data-pswp-width="1024" 
+                            data-pswp-height="1024" 
+                            data-cropped="true"
+                            target="_blank">
+                            <img data-src="https://swiperjs.com/demos/images/nature-5.jpg" class="swiper-lazy"/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://swiperjs.com/demos/images/nature-6.jpg" 
+                            data-pswp-width="1024" 
+                            data-pswp-height="1024" 
+                            data-cropped="true"
+                            target="_blank">
+                            <img data-src="https://swiperjs.com/demos/images/nature-6.jpg" class="swiper-lazy"/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://swiperjs.com/demos/images/nature-7.jpg" 
+                            data-pswp-width="1024" 
+                            data-pswp-height="1024" 
+                            data-cropped="true"
+                            target="_blank">
+                            <img data-src="https://swiperjs.com/demos/images/nature-7.jpg" class="swiper-lazy"/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://swiperjs.com/demos/images/nature-8.jpg" 
+                            data-pswp-width="1024" 
+                            data-pswp-height="1024" 
+                            data-cropped="true"
+                            target="_blank">
+                            <img data-src="https://swiperjs.com/demos/images/nature-8.jpg" class="swiper-lazy"/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://swiperjs.com/demos/images/nature-9.jpg" 
+                            data-pswp-width="1024" 
+                            data-pswp-height="1024" 
+                            data-cropped="true"
+                            target="_blank">
+                            <img data-src="https://swiperjs.com/demos/images/nature-9.jpg" class="swiper-lazy"/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://swiperjs.com/demos/images/nature-10.jpg" 
+                            data-pswp-width="1024" 
+                            data-pswp-height="1024" 
+                            data-cropped="true"
+                            target="_blank">
+                            <img data-src="https://swiperjs.com/demos/images/nature-10.jpg" class="swiper-lazy"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                </div>
+                <div thumbsSlider="" class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" class="swiper-lazy"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="https://swiperjs.com/demos/images/nature-2.jpg" class="swiper-lazy"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="https://swiperjs.com/demos/images/nature-3.jpg" class="swiper-lazy"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="https://swiperjs.com/demos/images/nature-4.jpg" class="swiper-lazy"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="https://swiperjs.com/demos/images/nature-5.jpg" class="swiper-lazy"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="https://swiperjs.com/demos/images/nature-6.jpg" class="swiper-lazy"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="https://swiperjs.com/demos/images/nature-7.jpg" class="swiper-lazy"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="https://swiperjs.com/demos/images/nature-8.jpg" class="swiper-lazy"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="https://swiperjs.com/demos/images/nature-9.jpg" class="swiper-lazy"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="https://swiperjs.com/demos/images/nature-10.jpg" class="swiper-lazy"/>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+
+    </div>
+    <!-- <div className="pswp-gallery pswp-gallery--single-column" id="gallery--simple">
+        <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" 
+            data-pswp-width="1669" 
+            data-pswp-height="2500" 
+            target="_blank">
+            <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
+        </a>
+
+        <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" 
+            data-pswp-width="1875" 
+            data-pswp-height="2500" 
+            data-cropped="true" 
+            target="_blank">
+            <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt="" />
+        </a>
+        
+        <a href="https://unsplash.com" 
+            data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
+            data-pswp-width="2500" 
+            data-pswp-height="1666" 
+            data-cropped="true" 
+            target="_blank">
+            <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
+        </a>
+
+        <a href="http://example.com" 
+            data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg"
+            data-pswp-width="2500" 
+            data-pswp-height="1668" 
+            data-cropped="true" 
+            target="_blank">
+            <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-200.jpg" alt="" />
+        </a>
+
+        <div>
+            <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"
+            data-pswp-width="2500" 
+            data-pswp-height="1667" 
+            target="_blank">
+                <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" />
+            </a>
+        </div>
+    </div> -->
+
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script type="module">
+    import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+  
+    var swiper = new Swiper(".mySwiper", {
+        lazy: {
+            loadPrevNext: true,
+        },
+        loop: false,
+        threshold: 10,
+        spaceBetween: 10,
+        slidesPerView: 5,
+        freeMode: false,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    window.swiper2 = new Swiper(".mySwiper2", {
+        lazy: {
+            loadPrevNext: true,
+        },
+        loop: false,
+        threshold: 5,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+    });
+  </script>
+  <script type="module">
+    // Include Lightbox 
+    import PhotoSwipeLightbox from './photoswipe/photoswipe-lightbox.esm.min.js';
+
+
+    const options = {
+        // may select multiple "galleries"
+        gallerySelector: '#gallery--simple',
+    
+        // Elements within gallerySelector (slides)
+        childSelector: '.mySwiper2 .swiper-slide a',
+    
+        // Include PhotoSwipe Core
+        // and use absolute path (that starts with http(s)://)
+        pswpModule: '/photoswipe/photoswipe.esm.min.js',
+    
+        // Include CSS file,
+        // (if you haven't included in via <link>)
+        pswpCSS: '/photoswipe/photoswipe.css',
+
+        // appendToEl: fullscreenAPI ? pswpContainer : document.body,
+
+        bgOpacity: 1,
+        preload: [1,2],
+        // initialZoomLevel: 'fit',
+        // secondaryZoomLevel: 'fill',
+        // maxZoomLevel: 2,
+    }
+    
+    class PhotoSwipeManager {
+        constructor({
+            baseOptions, 
+            photoSwipeInstanceFactory, 
+            fullscreenApiProvider, 
+            fullScreenContainerProvider,
+        }){
+            this.indexChangeListeners = [];
+
+            this.baseOptions = baseOptions;
+            this.fullscreenAPI = fullscreenApiProvider();
+            this.pswpContainer = fullScreenContainerProvider();
+
+            this.createInstance = () => photoSwipeInstanceFactory({
+                ...baseOptions, 
+                appendToEl: this.pswpContainer,
+            });
+            this.activeInstance = null;
+
+            this.init();
+        }
+
+        toggleFullScreen() {
+            if (this.fullscreenAPI.isFullscreen()) {
+                this.fullscreenAPI.exit();
+            }else{
+                this.fullscreenAPI.request(this.pswpContainer);
+            }
+        }
+
+        setFullScreen(isFullScreen) {
+            if (this.fullscreenAPI.isFullscreen() && !isFullScreen) {
+                this.fullscreenAPI.exit();
+            } else if (!this.fullscreenAPI.isFullscreen() && isFullScreen) {
+                this.fullscreenAPI.request(this.pswpContainer);
+            }
+        }
+        
+        async init() {
+            // await this.initNormal();
+            this.activeInstance = this.createInstance();
+
+            this.activeInstance.on('uiRegister', () => {
+                this.activeInstance.pswp.ui.registerElement({
+                    name: 'toggleFullScreen',
+                    order: 9,
+                    isButton: true,
+                    html: 'Toggle',
+                    onClick: (event, el) => {
+                        console.debug('toggle')
+                        this.toggleFullScreen();
+                    }
+                });
+            });
+
+            this.activeInstance.on('change', () => {
+                console.debug('change');
+                const index = this.activeInstance.pswp.currIndex;
+                this.indexChangeListeners.forEach(cb => cb(index));
+            });
+
+            this.activeInstance.on('afterInit', () => {
+                console.debug('initialized');
+                this.pswpContainer.style.display = 'block';
+                if (!window.history.state?.fullScreen) {
+                    window.history.pushState({fullScreen: true}, 'fullScreen');
+                }
+            });
+
+
+            this.activeInstance.on('close', () => {
+                console.debug('close');
+
+                if(window.history.state?.fullScreen) history.back(); 
+                // this.pswpContainer.style.display = 'none';
+                if (this.fullscreenAPI.isFullscreen()) this.fullscreenAPI.exit();
+            });
+
+            this.activeInstance.on('destroy', () => {
+                console.debug('destroy');
+
+                // if(window.history.state?.fullScreen) history.back(); 
+                this.pswpContainer.style.display = 'none';
+                // if (this.fullscreenAPI.isFullscreen()) this.fullscreenAPI.exit();
+            });
+
+            this.activeInstance.init();  
+        }
+
+        onIndexChange(cb) {
+            this.indexChangeListeners.push(cb);
+        }
+
+        close() {
+            try{
+                this.activeInstance.pswp.close();
+            } catch (e) {}
+        }
+    }
+
+    // OK
+    function photoSwipeInstanceFactory(baseOptions){
+        return new PhotoSwipeLightbox({...baseOptions, 
+            // showHideAnimationType: 'none',
+            // showAnimationDuration: 0,
+            // hideAnimationDuration: 0,
+            // preloadFirstSlide: false,
+        });
+    }
+    // OK
+    function fullscreenApiProvider() {
+        let api;
+        let enterFS;
+        let exitFS;
+        let elementFS;
+        let changeEvent;
+        let errorEvent;
+
+        if (document.documentElement.requestFullscreen) {
+            enterFS = 'requestFullscreen';
+            exitFS = 'exitFullscreen';
+            elementFS = 'fullscreenElement';
+            changeEvent = 'fullscreenchange';
+            errorEvent = 'fullscreenerror';
+        } else if (document.documentElement.webkitRequestFullscreen) {
+            enterFS = 'webkitRequestFullscreen';
+            exitFS = 'webkitExitFullscreen';
+            elementFS = 'webkitFullscreenElement';
+            changeEvent = 'webkitfullscreenchange';
+            errorEvent = 'webkitfullscreenerror';
+        }
+
+        if (enterFS) {
+            api = {
+            request: function (el) {
+                if (enterFS === 'webkitRequestFullscreen') {
+                el[enterFS](Element.ALLOW_KEYBOARD_INPUT);
+                } else {
+                el[enterFS]();
+                }
+            },
+
+            exit: function () {
+                return document[exitFS]();
+            },
+
+            isFullscreen: function () {
+                return document[elementFS];
+            },
+
+            change: changeEvent,
+            error: errorEvent
+            };
+        }
+
+        return api;
+    };
+    // OK
+    function fullScreenContainerProvider() {
+        const pswpContainer = document.createElement('div');
+        pswpContainer.style.background = '#000';
+        pswpContainer.style.width = '100%';
+        pswpContainer.style.height = '100%';
+        pswpContainer.style.display = 'none';
+        document.body.appendChild(pswpContainer);
+        return pswpContainer;
+    }
+    
+    const photoSwipeManager = new PhotoSwipeManager({
+        baseOptions: options,
+        photoSwipeInstanceFactory, 
+        fullscreenApiProvider, 
+        fullScreenContainerProvider,
+    });
+
+    photoSwipeManager.onIndexChange((index) => {
+        window.swiper2.slideTo(index, 0);
+    });
+    
+    window.addEventListener('popstate', (event) => {
+        console.debug('popstate')
+        photoSwipeManager.close();
+    }, false);
+
+</script>
+</body>
+</html>
